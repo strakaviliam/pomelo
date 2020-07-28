@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		08B305F5255C2CF54F691C84 /* Pods_PomeloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074782EEFCBF69981BBF4540 /* Pods_PomeloTests.framework */; };
+		9D37B6F124D0986100F748C0 /* LocationsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37B6F024D0986100F748C0 /* LocationsWorkerTests.swift */; };
+		9D37B6F324D0987400F748C0 /* LocationsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37B6F224D0987400F748C0 /* LocationsPresenterTests.swift */; };
+		9D37B6F524D0988800F748C0 /* LocationsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37B6F424D0988800F748C0 /* LocationsViewControllerTests.swift */; };
 		9D827FDE24D03D0D0020CD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827FDD24D03D0D0020CD2C /* AppDelegate.swift */; };
 		9D827FE024D03D0D0020CD2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827FDF24D03D0D0020CD2C /* SceneDelegate.swift */; };
 		9D827FE224D03D0D0020CD2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827FE124D03D0D0020CD2C /* ViewController.swift */; };
 		9D827FE524D03D0D0020CD2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D827FE324D03D0D0020CD2C /* Main.storyboard */; };
 		9D827FE724D03D0E0020CD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D827FE624D03D0E0020CD2C /* Assets.xcassets */; };
 		9D827FEA24D03D0E0020CD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D827FE824D03D0E0020CD2C /* LaunchScreen.storyboard */; };
-		9D827FF524D03D0E0020CD2C /* PomeloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827FF424D03D0E0020CD2C /* PomeloTests.swift */; };
 		9D82800224D03DBF0020CD2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D82800424D03DBF0020CD2C /* Localizable.strings */; };
 		9D82800724D03DEA0020CD2C /* UITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82800624D03DEA0020CD2C /* UITools.swift */; };
 		9D82800A24D03E400020CD2C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82800924D03E400020CD2C /* Router.swift */; };
@@ -34,6 +36,11 @@
 		9D82802924D05B040020CD2C /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82802824D05B040020CD2C /* LocationTableViewCell.swift */; };
 		9D82802D24D066610020CD2C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82802C24D066610020CD2C /* Style.swift */; };
 		9D82802F24D07C330020CD2C /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D82802E24D07C330020CD2C /* mock.json */; };
+		9D82803224D092000020CD2C /* LocationsPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82803124D092000020CD2C /* LocationsPresenterSpy.swift */; };
+		9D82803424D092110020CD2C /* LocationsSpyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82803324D092110020CD2C /* LocationsSpyStore.swift */; };
+		9D82803624D092220020CD2C /* LocationsDisplaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82803524D092220020CD2C /* LocationsDisplaySpy.swift */; };
+		9D82803824D092350020CD2C /* LocationsInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82803724D092350020CD2C /* LocationsInteractorSpy.swift */; };
+		9D82803B24D094300020CD2C /* LocationsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82803A24D094300020CD2C /* LocationsInteractorTests.swift */; };
 		BE72F31F78A039F4CC3BB6A1 /* Pods_Pomelo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +57,9 @@
 /* Begin PBXFileReference section */
 		074782EEFCBF69981BBF4540 /* Pods_PomeloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomeloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C205BAC75F4889B07BB451E /* Pods-Pomelo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo.release.xcconfig"; path = "Target Support Files/Pods-Pomelo/Pods-Pomelo.release.xcconfig"; sourceTree = "<group>"; };
+		9D37B6F024D0986100F748C0 /* LocationsWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsWorkerTests.swift; sourceTree = "<group>"; };
+		9D37B6F224D0987400F748C0 /* LocationsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenterTests.swift; sourceTree = "<group>"; };
+		9D37B6F424D0988800F748C0 /* LocationsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewControllerTests.swift; sourceTree = "<group>"; };
 		9D827FDA24D03D0D0020CD2C /* Pomelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D827FDD24D03D0D0020CD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D827FDF24D03D0D0020CD2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +69,6 @@
 		9D827FE924D03D0E0020CD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D827FEB24D03D0E0020CD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D827FF024D03D0E0020CD2C /* PomeloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomeloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D827FF424D03D0E0020CD2C /* PomeloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomeloTests.swift; sourceTree = "<group>"; };
 		9D827FF624D03D0E0020CD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D82800324D03DBF0020CD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9D82800624D03DEA0020CD2C /* UITools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITools.swift; sourceTree = "<group>"; };
@@ -80,6 +89,11 @@
 		9D82802824D05B040020CD2C /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		9D82802C24D066610020CD2C /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		9D82802E24D07C330020CD2C /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		9D82803124D092000020CD2C /* LocationsPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenterSpy.swift; sourceTree = "<group>"; };
+		9D82803324D092110020CD2C /* LocationsSpyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsSpyStore.swift; sourceTree = "<group>"; };
+		9D82803524D092220020CD2C /* LocationsDisplaySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDisplaySpy.swift; sourceTree = "<group>"; };
+		9D82803724D092350020CD2C /* LocationsInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsInteractorSpy.swift; sourceTree = "<group>"; };
+		9D82803A24D094300020CD2C /* LocationsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsInteractorTests.swift; sourceTree = "<group>"; };
 		A03459FD7BD1A4461B1387DB /* Pods-Pomelo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo.debug.xcconfig"; path = "Target Support Files/Pods-Pomelo/Pods-Pomelo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2216859B75929B3BA4C8E29 /* Pods-PomeloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomeloTests.release.xcconfig"; path = "Target Support Files/Pods-PomeloTests/Pods-PomeloTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomelo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +164,7 @@
 		9D827FF324D03D0E0020CD2C /* PomeloTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D827FF424D03D0E0020CD2C /* PomeloTests.swift */,
+				9D82803924D092580020CD2C /* locations */,
 				9D827FF624D03D0E0020CD2C /* Info.plist */,
 			);
 			path = PomeloTests;
@@ -223,6 +237,29 @@
 				9D82801824D03F3D0020CD2C /* Rest.swift */,
 			);
 			path = rest;
+			sourceTree = "<group>";
+		};
+		9D82803024D091E40020CD2C /* spy */ = {
+			isa = PBXGroup;
+			children = (
+				9D82803124D092000020CD2C /* LocationsPresenterSpy.swift */,
+				9D82803324D092110020CD2C /* LocationsSpyStore.swift */,
+				9D82803524D092220020CD2C /* LocationsDisplaySpy.swift */,
+				9D82803724D092350020CD2C /* LocationsInteractorSpy.swift */,
+			);
+			path = spy;
+			sourceTree = "<group>";
+		};
+		9D82803924D092580020CD2C /* locations */ = {
+			isa = PBXGroup;
+			children = (
+				9D82803024D091E40020CD2C /* spy */,
+				9D82803A24D094300020CD2C /* LocationsInteractorTests.swift */,
+				9D37B6F024D0986100F748C0 /* LocationsWorkerTests.swift */,
+				9D37B6F224D0987400F748C0 /* LocationsPresenterTests.swift */,
+				9D37B6F424D0988800F748C0 /* LocationsViewControllerTests.swift */,
+			);
+			path = locations;
 			sourceTree = "<group>";
 		};
 		EC0599CD741A2F517784A00D /* Pods */ = {
@@ -433,7 +470,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D827FF524D03D0E0020CD2C /* PomeloTests.swift in Sources */,
+				9D37B6F324D0987400F748C0 /* LocationsPresenterTests.swift in Sources */,
+				9D82803224D092000020CD2C /* LocationsPresenterSpy.swift in Sources */,
+				9D82803824D092350020CD2C /* LocationsInteractorSpy.swift in Sources */,
+				9D82803424D092110020CD2C /* LocationsSpyStore.swift in Sources */,
+				9D82803B24D094300020CD2C /* LocationsInteractorTests.swift in Sources */,
+				9D37B6F124D0986100F748C0 /* LocationsWorkerTests.swift in Sources */,
+				9D82803624D092220020CD2C /* LocationsDisplaySpy.swift in Sources */,
+				9D37B6F524D0988800F748C0 /* LocationsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

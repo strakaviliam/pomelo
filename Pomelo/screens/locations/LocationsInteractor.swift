@@ -18,7 +18,7 @@ class LocationsInteractor: LocationsInteractorProtocol {
     private var locationsWorker: LocationsWorker
     
     private var currentUserPosition: CLLocation?
-    private var locations: [PickupLocationModel]?
+    var locations: [PickupLocationModel]?
     
     init(presenter: LocationsPresenterProtocol, worker: LocationsWorker) {
         self.presenter = presenter
