@@ -9,7 +9,8 @@
 import UIKit
 
 protocol LocationsPresenterProtocol: class {
-    func showError(result: Result<[PickupLocationModel]>)
+    func showLocations(locations: [PickupLocationModel])
+    func showError(error: ResultError)
 }
 
 class LocationsPresenter: LocationsPresenterProtocol {
@@ -20,9 +21,11 @@ class LocationsPresenter: LocationsPresenterProtocol {
         self.view = view
     }
     
-    func showError(result: Result<[PickupLocationModel]>) {
-        view?.showErrorAlert(title: result.error ?? Strings.commonError, msg: result.message ?? "")
+    func showError(error: ResultError) {
+        view?.showErrorAlert(title: error.error ?? Strings.commonError, msg: error.message ?? "")
     }
     
-    
+    func showLocations(locations: [PickupLocationModel]) {
+        view?.showLocations(locations: locations)
+    }
 }

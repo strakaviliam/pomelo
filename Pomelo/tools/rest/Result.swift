@@ -12,8 +12,7 @@ struct Result<T> {
     let status: ResultStatus
     let code: String
     let data: T?
-    let error: String?
-    let message: String?
+    let error: ResultError?
     
     enum ResultStatus {
         case success
@@ -25,8 +24,7 @@ struct Result<T> {
             status: .fail,
             code: json["code"].string ?? Strings.commonErrorCode,
             data: nil,
-            error: json["error"].string ?? Strings.commonError,
-            message: json["message"].string ?? "")
+            error: ResultError(error: json["error"].string ?? Strings.commonError, message: json["message"].string ?? ""))
         
         return result
     }
@@ -36,9 +34,21 @@ struct Result<T> {
             status: .success,
             code: "200",
             data: data,
-            error: nil,
-            message: nil)
+            error: nil)
         
         return result
+    }
+}
+
+struct ResultError {
+    let error: String?
+    let message: String?
+    
+    static func defaultError() -> ResultError {
+        let error = ResultError(
+            error: Strings.commonError,
+            message: "")
+        
+        return error
     }
 }

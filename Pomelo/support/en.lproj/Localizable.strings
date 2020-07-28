@@ -5,3 +5,6 @@
   Created by Viliam Straka on 28/07/2020.
   Copyright © 2020 Viliam Straka. All rights reserved.
 */
+
+"locations.title" = "Pomelo Pick Up";
+"pomelo.defaultAlias" = "Pomelo";

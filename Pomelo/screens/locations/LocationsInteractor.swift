@@ -7,7 +7,7 @@
 //
 
 protocol LocationsInteractorProtocol {
-    
+    func loadLocations()
 }
 
 class LocationsInteractor: LocationsInteractorProtocol {
@@ -19,5 +19,13 @@ class LocationsInteractor: LocationsInteractorProtocol {
         locationsWorker = worker ?? LocationsWorker(locationsStore: LocationsRestStore())
     }
     
-    
+    func loadLocations() {
+        locationsWorker.pickupLocations(shopId: 1) { [weak self] (result) in
+            if result.status == .success, let data = result.data {
+                self?.presenter?.showLocations(locations: data.filter({ $0.active }))
+            } else {
+                self?.presenter?.showError(error: result.error ?? ResultError.defaultError())
+            }
+        }
+    }
 }

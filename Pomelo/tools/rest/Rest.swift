@@ -12,7 +12,7 @@ import SwiftyJSON
 class Rest {
     
     private var manager: SessionManager!
-    let printInfo: Bool = true
+    let printInfo: Bool = false
     
     private var endpoint: String = ""
     private var method: HTTPMethod = .get
@@ -81,6 +81,9 @@ class Rest {
                 url = "\(url)?\(apiParams)"
             }
         }
+        if useMethod == .get {
+            params = nil
+        }
         
         if url.hasSuffix("/") {
             url = String(url.dropLast())
@@ -139,7 +142,7 @@ class Rest {
             } catch _ {}
         }
         
-        done(json["body"])
+        done(json)
     }
     
     private func handleFailResponse(response: HTTPURLResponse?, data: Any?, done: (_ json: JSON) -> ()) {
@@ -157,7 +160,12 @@ class Rest {
             let jsonData: JSON = JSON(data)
             
             if jsonData["error"].exists() {
-                responseDict["error"] = jsonData["error"].stringValue
+                let error = jsonData["error"].stringValue
+                if (error.isEmpty) {
+                    responseDict["error"] = Strings.commonError
+                } else {
+                    responseDict["error"] = error
+                }
             }
             
             if jsonData["message"].exists() {

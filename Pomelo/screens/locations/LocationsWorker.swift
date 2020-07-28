@@ -13,8 +13,8 @@ class LocationsWorker {
         self.locationsStore = locationsStore
     }
     
-    func pickupLocations(done: @escaping (Result<[PickupLocationModel]>) -> Void) {
-        locationsStore.pickupLocations(done: { (result) in
+    func pickupLocations(shopId: Int, done: @escaping (Result<[PickupLocationModel]>) -> Void) {
+        locationsStore.pickupLocations(shopId: shopId, done: { (result) in
             done(result)
         })
     }

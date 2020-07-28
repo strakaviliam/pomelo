@@ -6,6 +6,28 @@
 //  Copyright © 2020 Viliam Straka. All rights reserved.
 //
 
-struct PickupLocationModel {
+import SwiftyJSON
+
+struct PickupLocationModel: Equatable {
+    let id: Int
+    let alias: String
+    let address1: String
+    let city: String
+    let active: Bool
+    let latitude: Double
+    let longitude: Double
     
+    init(fromJSON json: JSON) {
+        id = json["id_pickup_location"].int ?? json["id_partner_store"].intValue
+        alias = json["alias"].stringValue
+        address1 = json["address1"].stringValue
+        city = json["city"].stringValue
+        active = json["active"].boolValue
+        latitude = json["latitude"].doubleValue
+        longitude = json["longitude"].doubleValue
+    }
+    
+    static func ==(lhs: PickupLocationModel, rhs: PickupLocationModel) -> Bool {
+        return lhs.id == rhs.id && lhs.alias == rhs.alias
+    }
 }

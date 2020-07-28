@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F1D1CB64-3AAA-4D2F-AFFC-4A05385B98BE"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A62F0F4E-80B5-4933-8A2C-C4628482AC02"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pomelo/tools/rest/Rest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "networkOperation(method:parameters:headersAdditional:fail:success:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A62F0F4E-80B5-4933-8A2C-C4628482AC02 - 46f7d2ad2934712a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Pomelo.Rest.(networkOperation in _B5B1BF7BFAE6D89DAE299562C0F66C10)(method: Alamofire.HTTPMethod, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, headersAdditional: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, fail: (SwiftyJSON.JSON) -&gt; (), success: (SwiftyJSON.JSON) -&gt; ()) -&gt; ()"
+                  moduleName = "Pomelo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/strakaviliam/Documents/_projects/pomelo/Pomelo/tools/rest/Rest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "1390">
+               </Location>
+               <Location
+                  uuid = "A62F0F4E-80B5-4933-8A2C-C4628482AC02 - a66d026939232f0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SwiftyJSON.JSON) -&gt; () in closure #2 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Pomelo.Rest.(networkOperation in _B5B1BF7BFAE6D89DAE299562C0F66C10)(method: Alamofire.HTTPMethod, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, headersAdditional: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, fail: (SwiftyJSON.JSON) -&gt; (), success: (SwiftyJSON.JSON) -&gt; ()) -&gt; ()"
+                  moduleName = "Pomelo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/strakaviliam/Documents/_projects/pomelo/Pomelo/tools/rest/Rest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2008F36-C055-4053-9B5E-0943090A63B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pomelo/tools/rest/Rest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "networkOperation(method:parameters:headersAdditional:fail:success:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2008F36-C055-4053-9B5E-0943090A63B6 - 46f7d2ad2934712a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Pomelo.Rest.(networkOperation in _B5B1BF7BFAE6D89DAE299562C0F66C10)(method: Alamofire.HTTPMethod, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, headersAdditional: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, fail: (SwiftyJSON.JSON) -&gt; (), success: (SwiftyJSON.JSON) -&gt; ()) -&gt; ()"
+                  moduleName = "Pomelo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/strakaviliam/Documents/_projects/pomelo/Pomelo/tools/rest/Rest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "1819">
+               </Location>
+               <Location
+                  uuid = "A2008F36-C055-4053-9B5E-0943090A63B6 - 122f6374dd8c7934"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SwiftyJSON.JSON) -&gt; () in closure #2 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Pomelo.Rest.(networkOperation in _B5B1BF7BFAE6D89DAE299562C0F66C10)(method: Alamofire.HTTPMethod, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, headersAdditional: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, fail: (SwiftyJSON.JSON) -&gt; (), success: (SwiftyJSON.JSON) -&gt; ()) -&gt; ()"
+                  moduleName = "Pomelo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/strakaviliam/Documents/_projects/pomelo/Pomelo/tools/rest/Rest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -29,6 +29,10 @@
 		9D82801F24D03FDB0020CD2C /* LocationsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82801E24D03FDB0020CD2C /* LocationsWorker.swift */; };
 		9D82802124D03FF30020CD2C /* LocationsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82802024D03FF30020CD2C /* LocationsStore.swift */; };
 		9D82802324D040560020CD2C /* PickupLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82802224D040560020CD2C /* PickupLocationModel.swift */; };
+		9D82802524D04EAB0020CD2C /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D82802424D04EAB0020CD2C /* LocationsViewController.xib */; };
+		9D82802724D05AFC0020CD2C /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D82802624D05AFC0020CD2C /* LocationTableViewCell.xib */; };
+		9D82802924D05B040020CD2C /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82802824D05B040020CD2C /* LocationTableViewCell.swift */; };
+		9D82802D24D066610020CD2C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82802C24D066610020CD2C /* Style.swift */; };
 		BE72F31F78A039F4CC3BB6A1 /* Pods_Pomelo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +74,10 @@
 		9D82801E24D03FDB0020CD2C /* LocationsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsWorker.swift; sourceTree = "<group>"; };
 		9D82802024D03FF30020CD2C /* LocationsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsStore.swift; sourceTree = "<group>"; };
 		9D82802224D040560020CD2C /* PickupLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocationModel.swift; sourceTree = "<group>"; };
+		9D82802424D04EAB0020CD2C /* LocationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
+		9D82802624D05AFC0020CD2C /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
+		9D82802824D05B040020CD2C /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		9D82802C24D066610020CD2C /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		A03459FD7BD1A4461B1387DB /* Pods-Pomelo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo.debug.xcconfig"; path = "Target Support Files/Pods-Pomelo/Pods-Pomelo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2216859B75929B3BA4C8E29 /* Pods-PomeloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomeloTests.release.xcconfig"; path = "Target Support Files/Pods-PomeloTests/Pods-PomeloTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomelo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +165,7 @@
 				9D827FE824D03D0E0020CD2C /* LaunchScreen.storyboard */,
 				9D82800424D03DBF0020CD2C /* Localizable.strings */,
 				9D82801624D03F130020CD2C /* Strings.swift */,
+				9D82802C24D066610020CD2C /* Style.swift */,
 			);
 			path = support;
 			sourceTree = "<group>";
@@ -191,12 +200,15 @@
 			isa = PBXGroup;
 			children = (
 				9D82800F24D03EAE0020CD2C /* LocationsConfiguration.swift */,
-				9D82801124D03EDA0020CD2C /* LocationsViewController.swift */,
 				9D82801A24D03FB20020CD2C /* LocationsPresenter.swift */,
 				9D82801C24D03FBC0020CD2C /* LocationsInteractor.swift */,
 				9D82801E24D03FDB0020CD2C /* LocationsWorker.swift */,
 				9D82802024D03FF30020CD2C /* LocationsStore.swift */,
 				9D82802224D040560020CD2C /* PickupLocationModel.swift */,
+				9D82801124D03EDA0020CD2C /* LocationsViewController.swift */,
+				9D82802424D04EAB0020CD2C /* LocationsViewController.xib */,
+				9D82802824D05B040020CD2C /* LocationTableViewCell.swift */,
+				9D82802624D05AFC0020CD2C /* LocationTableViewCell.xib */,
 			);
 			path = locations;
 			sourceTree = "<group>";
@@ -305,7 +317,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D82802524D04EAB0020CD2C /* LocationsViewController.xib in Resources */,
 				9D827FEA24D03D0E0020CD2C /* LaunchScreen.storyboard in Resources */,
+				9D82802724D05AFC0020CD2C /* LocationTableViewCell.xib in Resources */,
 				9D82800224D03DBF0020CD2C /* Localizable.strings in Resources */,
 				9D827FE724D03D0E0020CD2C /* Assets.xcassets in Resources */,
 				9D827FE524D03D0D0020CD2C /* Main.storyboard in Resources */,
@@ -397,6 +411,7 @@
 				9D827FE224D03D0D0020CD2C /* ViewController.swift in Sources */,
 				9D82801724D03F130020CD2C /* Strings.swift in Sources */,
 				9D82801B24D03FB20020CD2C /* LocationsPresenter.swift in Sources */,
+				9D82802D24D066610020CD2C /* Style.swift in Sources */,
 				9D82801024D03EAE0020CD2C /* LocationsConfiguration.swift in Sources */,
 				9D82800C24D03E5B0020CD2C /* Routes.swift in Sources */,
 				9D82801224D03EDA0020CD2C /* LocationsViewController.swift in Sources */,
@@ -404,6 +419,7 @@
 				9D82801924D03F3D0020CD2C /* Rest.swift in Sources */,
 				9D827FDE24D03D0D0020CD2C /* AppDelegate.swift in Sources */,
 				9D82800A24D03E400020CD2C /* Router.swift in Sources */,
+				9D82802924D05B040020CD2C /* LocationTableViewCell.swift in Sources */,
 				9D827FE024D03D0D0020CD2C /* SceneDelegate.swift in Sources */,
 				9D82800724D03DEA0020CD2C /* UITools.swift in Sources */,
 			);
