@@ -2,3 +2,4 @@
 
 when API endpoint is not working, can use **LocationsMockStore** (in *LocationsConfiguration*)
 
+![gif](screens/gif.gif)
