@@ -6,5 +6,12 @@
   Copyright © 2020 Viliam Straka. All rights reserved.
 */
 
+"ok" = "OK";
+"distance.km" = "km";
+"general_error" = "Oooops";
+"pull_refresh" = "Pull to refresh";
+
 "locations.title" = "Pomelo Pick Up";
 "pomelo.defaultAlias" = "Pomelo";
+"locationDisabled.title" = "Location disabled";
+"locationDisabled.message" = "Enable Location Services in Settings > Privacy";

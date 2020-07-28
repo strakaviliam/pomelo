@@ -35,3 +35,23 @@ class LocationsRestStore: LocationsStore {
         })
     }
 }
+
+class LocationsMockStore: LocationsStore {
+    
+    func pickupLocations(shopId: Int, done: @escaping (Result<[PickupLocationModel]>) -> Void) {
+        
+        let path = Bundle.main.path(forResource: "mock", ofType: "json")!
+        let jsonString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
+        let json = JSON(parseJSON: jsonString!)
+        
+        guard let pickupList = json["pickup"].array else {
+            done(Result.fail(json: json))
+            return
+        }
+        let locations = pickupList.map({ PickupLocationModel.init(fromJSON: $0)})
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            done(Result.success(data: locations))
+        }
+    }
+}

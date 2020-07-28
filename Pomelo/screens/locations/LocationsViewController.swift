@@ -8,6 +8,7 @@
 
 import UIKit
 import Localize_Swift
+import CoreLocation
 
 protocol LocationsDisplayProtocol: class {
     func showErrorAlert(title: String, msg: String?)
@@ -18,12 +19,14 @@ class LocationsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    let locationManager = CLLocationManager()
     var locationsInteractor: LocationsInteractorProtocol?
     var locations: [PickupLocationModel]?
     var selectedLocations: [PickupLocationModel] = []
+    let refreshControl = UIRefreshControl()
     
     lazy var buttonSearch: UIBarButtonItem = {
-        return UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(loadLocation))
+        return UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(getPosition))
     }()
     
     override func viewDidLoad() {
@@ -32,8 +35,12 @@ class LocationsViewController: UIViewController {
         initView()
     }
     
-    @objc func loadLocation() {
-        //todo
+    @objc func getPosition() {
+        if !CLLocationManager.locationServicesEnabled() || CLLocationManager.authorizationStatus() == .denied {
+            popupAlert(title: "locationDisabled.title".localized(), message: "locationDisabled.message".localized())
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
     }
 }
 
@@ -41,11 +48,13 @@ extension LocationsViewController: LocationsDisplayProtocol {
 
     func showErrorAlert(title: String, msg: String?) {
         hideHud()
+        refreshControl.endRefreshing()
         popupAlert(title: title.localized(), message: msg?.localized())
     }
     
     func showLocations(locations: [PickupLocationModel]) {
         hideHud()
+        refreshControl.endRefreshing()
         self.locations = locations
         tableView.reloadData()
     }
@@ -54,10 +63,19 @@ extension LocationsViewController: LocationsDisplayProtocol {
 //MARK:- Configure
 extension LocationsViewController {
     
-    func configure(){
+    func configure() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "pull_refresh".localized())
+        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+        refreshControl.layer.zPosition = -1
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.startUpdatingLocation()
     }
     
     func initView() {
@@ -101,14 +119,13 @@ extension LocationsViewController: UITableViewDelegate , UITableViewDataSource {
         cell.cityLbl.text = location.city
         cell.addressLbl.text = location.address1
         cell.aliasLbl.text = location.alias
-        cell.distanceLbl.text = ""
+        cell.distanceLbl.text = location.distance == nil ? "" : "\(String(format: "%.1f", location.distance!)) \("distance.km".localized())"
         
         if (location.alias.isEmpty) {
             cell.aliasLbl.text = "pomelo.defaultAlias".localized()
         }
         
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -126,6 +143,20 @@ extension LocationsViewController: UITableViewDelegate , UITableViewDataSource {
         } else {
             selectedLocations.append(location)
             cell.selectedImg.image = UIImage(named: "check_box_checked")
+        }
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        getLocations()
+    }
+}
+
+extension LocationsViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations positions: [CLLocation]) {
+        if !positions.isEmpty {
+            let currentPosition = positions.first
+            locationsInteractor?.updateDistance(position: currentPosition)
         }
     }
 }

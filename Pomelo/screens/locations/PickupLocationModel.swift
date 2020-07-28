@@ -8,7 +8,7 @@
 
 import SwiftyJSON
 
-struct PickupLocationModel: Equatable {
+class PickupLocationModel: Equatable {
     let id: Int
     let alias: String
     let address1: String
@@ -16,6 +16,8 @@ struct PickupLocationModel: Equatable {
     let active: Bool
     let latitude: Double
     let longitude: Double
+    
+    var distance: Double?
     
     init(fromJSON json: JSON) {
         id = json["id_pickup_location"].int ?? json["id_partner_store"].intValue

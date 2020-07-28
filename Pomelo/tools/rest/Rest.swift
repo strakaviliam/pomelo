@@ -12,7 +12,7 @@ import SwiftyJSON
 class Rest {
     
     private var manager: SessionManager!
-    let printInfo: Bool = false
+    let printInfo: Bool = true
     
     private var endpoint: String = ""
     private var method: HTTPMethod = .get

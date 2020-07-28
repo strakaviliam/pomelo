@@ -53,6 +53,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="9fX-Gu-S5W" firstAttribute="top" secondItem="LyU-uo-Zsa" secondAttribute="top" constant="8" id="3ft-uP-iNt"/>
                     <constraint firstItem="gCb-Ra-75g" firstAttribute="top" secondItem="LyU-uo-Zsa" secondAttribute="top" id="4xn-x7-Cby"/>
@@ -72,6 +73,7 @@
                     <constraint firstItem="AQj-Uq-SiF" firstAttribute="centerY" secondItem="LyU-uo-Zsa" secondAttribute="centerY" id="tu7-Uh-Kid"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="addressLbl" destination="Fg1-t5-QAE" id="Nvj-M7-uAg"/>
                 <outlet property="aliasLbl" destination="Ix7-Xx-t7y" id="dqV-CI-gjt"/>

@@ -33,6 +33,7 @@
 		9D82802724D05AFC0020CD2C /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D82802624D05AFC0020CD2C /* LocationTableViewCell.xib */; };
 		9D82802924D05B040020CD2C /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82802824D05B040020CD2C /* LocationTableViewCell.swift */; };
 		9D82802D24D066610020CD2C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82802C24D066610020CD2C /* Style.swift */; };
+		9D82802F24D07C330020CD2C /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D82802E24D07C330020CD2C /* mock.json */; };
 		BE72F31F78A039F4CC3BB6A1 /* Pods_Pomelo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		9D82802624D05AFC0020CD2C /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
 		9D82802824D05B040020CD2C /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		9D82802C24D066610020CD2C /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		9D82802E24D07C330020CD2C /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
 		A03459FD7BD1A4461B1387DB /* Pods-Pomelo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo.debug.xcconfig"; path = "Target Support Files/Pods-Pomelo/Pods-Pomelo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2216859B75929B3BA4C8E29 /* Pods-PomeloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomeloTests.release.xcconfig"; path = "Target Support Files/Pods-PomeloTests/Pods-PomeloTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomelo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +159,7 @@
 		9D827FFF24D03D9B0020CD2C /* support */ = {
 			isa = PBXGroup;
 			children = (
+				9D82802E24D07C330020CD2C /* mock.json */,
 				9D827FDD24D03D0D0020CD2C /* AppDelegate.swift */,
 				9D827FDF24D03D0D0020CD2C /* SceneDelegate.swift */,
 				9D827FE124D03D0D0020CD2C /* ViewController.swift */,
@@ -317,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D82802F24D07C330020CD2C /* mock.json in Resources */,
 				9D82802524D04EAB0020CD2C /* LocationsViewController.xib in Resources */,
 				9D827FEA24D03D0E0020CD2C /* LaunchScreen.storyboard in Resources */,
 				9D82802724D05AFC0020CD2C /* LocationTableViewCell.xib in Resources */,

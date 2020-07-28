@@ -49,7 +49,7 @@ extension UIViewController {
     
     func popupAlert(title: String?, message: String?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "cancel".localized(), style: .cancel)
+        let cancelAction = UIAlertAction(title: "ok".localized(), style: .cancel)
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
