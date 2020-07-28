@@ -2,7 +2,7 @@ target 'Pomelo' do
 
   use_frameworks!
   pod 'JGProgressHUD'
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.9.1'
   pod 'Localize-Swift'
   pod 'SwiftyJSON'
 
