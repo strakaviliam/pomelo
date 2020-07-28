@@ -11,7 +11,7 @@ class LocationsConfiguration {
     static func setup() -> UIViewController {
         let controller = LocationsViewController()
         let presenter = LocationsPresenter(view: controller)
-        let store = LocationsMockStore()//LocationsRestStore()
+        let store = LocationsRestStore()//LocationsMockStore
         let worker = LocationsWorker(locationsStore: store)
         let interactor = LocationsInteractor(presenter: presenter, worker: worker)
         
