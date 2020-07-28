@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.2.1)
+  - JGProgressHUD (2.1)
+  - Localize-Swift (3.1.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - JGProgressHUD
+  - Localize-Swift
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JGProgressHUD
+    - Localize-Swift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 32601cc76d2f7d749bb49e28643942a0fe9ed7ae
+
+COCOAPODS: 1.9.0

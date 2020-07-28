@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08B305F5255C2CF54F691C84 /* Pods_PomeloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074782EEFCBF69981BBF4540 /* Pods_PomeloTests.framework */; };
+		9D827FDE24D03D0D0020CD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827FDD24D03D0D0020CD2C /* AppDelegate.swift */; };
+		9D827FE024D03D0D0020CD2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827FDF24D03D0D0020CD2C /* SceneDelegate.swift */; };
+		9D827FE224D03D0D0020CD2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827FE124D03D0D0020CD2C /* ViewController.swift */; };
+		9D827FE524D03D0D0020CD2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D827FE324D03D0D0020CD2C /* Main.storyboard */; };
+		9D827FE724D03D0E0020CD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D827FE624D03D0E0020CD2C /* Assets.xcassets */; };
+		9D827FEA24D03D0E0020CD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D827FE824D03D0E0020CD2C /* LaunchScreen.storyboard */; };
+		9D827FF524D03D0E0020CD2C /* PomeloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827FF424D03D0E0020CD2C /* PomeloTests.swift */; };
+		BE72F31F78A039F4CC3BB6A1 /* Pods_Pomelo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D827FF124D03D0E0020CD2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D827FD224D03D0D0020CD2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D827FD924D03D0D0020CD2C;
+			remoteInfo = Pomelo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		074782EEFCBF69981BBF4540 /* Pods_PomeloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomeloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C205BAC75F4889B07BB451E /* Pods-Pomelo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo.release.xcconfig"; path = "Target Support Files/Pods-Pomelo/Pods-Pomelo.release.xcconfig"; sourceTree = "<group>"; };
+		9D827FDA24D03D0D0020CD2C /* Pomelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D827FDD24D03D0D0020CD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D827FDF24D03D0D0020CD2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9D827FE124D03D0D0020CD2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D827FE424D03D0D0020CD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D827FE624D03D0E0020CD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D827FE924D03D0E0020CD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D827FEB24D03D0E0020CD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D827FF024D03D0E0020CD2C /* PomeloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomeloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D827FF424D03D0E0020CD2C /* PomeloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomeloTests.swift; sourceTree = "<group>"; };
+		9D827FF624D03D0E0020CD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03459FD7BD1A4461B1387DB /* Pods-Pomelo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo.debug.xcconfig"; path = "Target Support Files/Pods-Pomelo/Pods-Pomelo.debug.xcconfig"; sourceTree = "<group>"; };
+		D2216859B75929B3BA4C8E29 /* Pods-PomeloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomeloTests.release.xcconfig"; path = "Target Support Files/Pods-PomeloTests/Pods-PomeloTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomelo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F975C0FDF9DEA19D15DE38C0 /* Pods-PomeloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomeloTests.debug.xcconfig"; path = "Target Support Files/Pods-PomeloTests/Pods-PomeloTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D827FD724D03D0D0020CD2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE72F31F78A039F4CC3BB6A1 /* Pods_Pomelo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D827FED24D03D0E0020CD2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B305F5255C2CF54F691C84 /* Pods_PomeloTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		356BA535C63102E423329571 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC4C3FF1AF0B65AA49129D60 /* Pods_Pomelo.framework */,
+				074782EEFCBF69981BBF4540 /* Pods_PomeloTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D827FD124D03D0D0020CD2C = {
+			isa = PBXGroup;
+			children = (
+				9D827FDC24D03D0D0020CD2C /* Pomelo */,
+				9D827FF324D03D0E0020CD2C /* PomeloTests */,
+				9D827FDB24D03D0D0020CD2C /* Products */,
+				EC0599CD741A2F517784A00D /* Pods */,
+				356BA535C63102E423329571 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D827FDB24D03D0D0020CD2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D827FDA24D03D0D0020CD2C /* Pomelo.app */,
+				9D827FF024D03D0E0020CD2C /* PomeloTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D827FDC24D03D0D0020CD2C /* Pomelo */ = {
+			isa = PBXGroup;
+			children = (
+				9D827FDD24D03D0D0020CD2C /* AppDelegate.swift */,
+				9D827FDF24D03D0D0020CD2C /* SceneDelegate.swift */,
+				9D827FE124D03D0D0020CD2C /* ViewController.swift */,
+				9D827FE324D03D0D0020CD2C /* Main.storyboard */,
+				9D827FE624D03D0E0020CD2C /* Assets.xcassets */,
+				9D827FE824D03D0E0020CD2C /* LaunchScreen.storyboard */,
+				9D827FEB24D03D0E0020CD2C /* Info.plist */,
+			);
+			path = Pomelo;
+			sourceTree = "<group>";
+		};
+		9D827FF324D03D0E0020CD2C /* PomeloTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D827FF424D03D0E0020CD2C /* PomeloTests.swift */,
+				9D827FF624D03D0E0020CD2C /* Info.plist */,
+			);
+			path = PomeloTests;
+			sourceTree = "<group>";
+		};
+		EC0599CD741A2F517784A00D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A03459FD7BD1A4461B1387DB /* Pods-Pomelo.debug.xcconfig */,
+				0C205BAC75F4889B07BB451E /* Pods-Pomelo.release.xcconfig */,
+				F975C0FDF9DEA19D15DE38C0 /* Pods-PomeloTests.debug.xcconfig */,
+				D2216859B75929B3BA4C8E29 /* Pods-PomeloTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D827FD924D03D0D0020CD2C /* Pomelo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D827FF924D03D0E0020CD2C /* Build configuration list for PBXNativeTarget "Pomelo" */;
+			buildPhases = (
+				2658E5D7051BA6EA284AC040 /* [CP] Check Pods Manifest.lock */,
+				9D827FD624D03D0D0020CD2C /* Sources */,
+				9D827FD724D03D0D0020CD2C /* Frameworks */,
+				9D827FD824D03D0D0020CD2C /* Resources */,
+				A0311DD0F576421211D72410 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pomelo;
+			productName = Pomelo;
+			productReference = 9D827FDA24D03D0D0020CD2C /* Pomelo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D827FEF24D03D0E0020CD2C /* PomeloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D827FFC24D03D0E0020CD2C /* Build configuration list for PBXNativeTarget "PomeloTests" */;
+			buildPhases = (
+				80631BC5DC07791F40A10950 /* [CP] Check Pods Manifest.lock */,
+				9D827FEC24D03D0E0020CD2C /* Sources */,
+				9D827FED24D03D0E0020CD2C /* Frameworks */,
+				9D827FEE24D03D0E0020CD2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D827FF224D03D0E0020CD2C /* PBXTargetDependency */,
+			);
+			name = PomeloTests;
+			productName = PomeloTests;
+			productReference = 9D827FF024D03D0E0020CD2C /* PomeloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D827FD224D03D0D0020CD2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Viliam Straka";
+				TargetAttributes = {
+					9D827FD924D03D0D0020CD2C = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					9D827FEF24D03D0E0020CD2C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 9D827FD924D03D0D0020CD2C;
+					};
+				};
+			};
+			buildConfigurationList = 9D827FD524D03D0D0020CD2C /* Build configuration list for PBXProject "Pomelo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D827FD124D03D0D0020CD2C;
+			productRefGroup = 9D827FDB24D03D0D0020CD2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D827FD924D03D0D0020CD2C /* Pomelo */,
+				9D827FEF24D03D0E0020CD2C /* PomeloTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D827FD824D03D0D0020CD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D827FEA24D03D0E0020CD2C /* LaunchScreen.storyboard in Resources */,
+				9D827FE724D03D0E0020CD2C /* Assets.xcassets in Resources */,
+				9D827FE524D03D0D0020CD2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D827FEE24D03D0E0020CD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2658E5D7051BA6EA284AC040 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pomelo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80631BC5DC07791F40A10950 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PomeloTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0311DD0F576421211D72410 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomelo/Pods-Pomelo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomelo/Pods-Pomelo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomelo/Pods-Pomelo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D827FD624D03D0D0020CD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D827FE224D03D0D0020CD2C /* ViewController.swift in Sources */,
+				9D827FDE24D03D0D0020CD2C /* AppDelegate.swift in Sources */,
+				9D827FE024D03D0D0020CD2C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D827FEC24D03D0E0020CD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D827FF524D03D0E0020CD2C /* PomeloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D827FF224D03D0E0020CD2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D827FD924D03D0D0020CD2C /* Pomelo */;
+			targetProxy = 9D827FF124D03D0E0020CD2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D827FE324D03D0D0020CD2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D827FE424D03D0D0020CD2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D827FE824D03D0E0020CD2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D827FE924D03D0E0020CD2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D827FF724D03D0E0020CD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D827FF824D03D0E0020CD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D827FFA24D03D0E0020CD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03459FD7BD1A4461B1387DB /* Pods-Pomelo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pomelo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stoocq.Pomelo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D827FFB24D03D0E0020CD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C205BAC75F4889B07BB451E /* Pods-Pomelo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pomelo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stoocq.Pomelo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D827FFD24D03D0E0020CD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F975C0FDF9DEA19D15DE38C0 /* Pods-PomeloTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PomeloTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stoocq.PomeloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomelo.app/Pomelo";
+			};
+			name = Debug;
+		};
+		9D827FFE24D03D0E0020CD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2216859B75929B3BA4C8E29 /* Pods-PomeloTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PomeloTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stoocq.PomeloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomelo.app/Pomelo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D827FD524D03D0D0020CD2C /* Build configuration list for PBXProject "Pomelo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D827FF724D03D0E0020CD2C /* Debug */,
+				9D827FF824D03D0E0020CD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D827FF924D03D0E0020CD2C /* Build configuration list for PBXNativeTarget "Pomelo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D827FFA24D03D0E0020CD2C /* Debug */,
+				9D827FFB24D03D0E0020CD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D827FFC24D03D0E0020CD2C /* Build configuration list for PBXNativeTarget "PomeloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D827FFD24D03D0E0020CD2C /* Debug */,
+				9D827FFE24D03D0E0020CD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D827FD224D03D0D0020CD2C /* Project object */;
+}

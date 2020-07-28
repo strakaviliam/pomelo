@@ -1,0 +1,6 @@
+framework module Pods_Pomelo {
+  umbrella header "Pods-Pomelo-umbrella.h"
+
+  export *
+  module * { export * }
+}
