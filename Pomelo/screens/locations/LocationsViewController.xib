@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationsViewController" customModule="Pomelo" customModuleProvider="target">
             <connections>
+                <outlet property="noDataLbl" destination="Mye-J2-9Y1" id="tBI-9A-bw6"/>
                 <outlet property="tableView" destination="dGO-8g-0ST" id="LTc-JV-GU8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="H06-iJ-IpR"/>
             </connections>
@@ -18,15 +19,24 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mye-J2-9Y1">
+                    <rect key="frame" x="0.0" y="437.5" width="414" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dGO-8g-0ST">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="dGO-8g-0ST" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GnQ-Ea-yg1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Mye-J2-9Y1" secondAttribute="trailing" id="Q2f-KN-GIx"/>
+                <constraint firstItem="Mye-J2-9Y1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y8E-uO-3F4"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dGO-8g-0ST" secondAttribute="trailing" id="omy-O2-UQe"/>
+                <constraint firstItem="Mye-J2-9Y1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uDC-Ur-4x8"/>
                 <constraint firstItem="dGO-8g-0ST" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wse-rs-RXR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dGO-8g-0ST" secondAttribute="bottom" id="y3n-G8-fgF"/>
             </constraints>

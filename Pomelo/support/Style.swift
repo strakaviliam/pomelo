@@ -13,4 +13,5 @@ extension UIFont {
     static let locationAlias = UIFont.boldSystemFont(ofSize: 16)
     static let locationAddress = UIFont.systemFont(ofSize: 14)
     static let locationDistance = UIFont.boldSystemFont(ofSize: 14)
+    static let locationNoData = UIFont.boldSystemFont(ofSize: 26)
 }

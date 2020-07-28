@@ -50,7 +50,7 @@ class LocationsMockStore: LocationsStore {
         }
         let locations = pickupList.map({ PickupLocationModel.init(fromJSON: $0)})
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             done(Result.success(data: locations))
         }
     }

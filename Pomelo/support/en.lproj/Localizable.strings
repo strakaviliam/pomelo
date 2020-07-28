@@ -12,6 +12,7 @@
 "pull_refresh" = "Pull to refresh";
 
 "locations.title" = "Pomelo Pick Up";
+"locations.empty" = "No locations right now";
 "pomelo.defaultAlias" = "Pomelo";
 "locationDisabled.title" = "Location disabled";
 "locationDisabled.message" = "Enable Location Services in Settings > Privacy";

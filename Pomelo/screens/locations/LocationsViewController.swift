@@ -18,6 +18,7 @@ protocol LocationsDisplayProtocol: class {
 class LocationsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noDataLbl: UILabel!
     
     let locationManager = CLLocationManager()
     var locationsInteractor: LocationsInteractorProtocol?
@@ -49,6 +50,7 @@ extension LocationsViewController: LocationsDisplayProtocol {
     func showErrorAlert(title: String, msg: String?) {
         hideHud()
         refreshControl.endRefreshing()
+        noDataLbl.isHidden = false
         popupAlert(title: title.localized(), message: msg?.localized())
     }
     
@@ -56,6 +58,7 @@ extension LocationsViewController: LocationsDisplayProtocol {
         hideHud()
         refreshControl.endRefreshing()
         self.locations = locations
+        noDataLbl.isHidden = !locations.isEmpty
         tableView.reloadData()
     }
 }
@@ -80,6 +83,7 @@ extension LocationsViewController {
     
     func initView() {
         setupNavigationBar()
+        setupNoDataInfo()
         registerTableCell()
         getLocations()
     }
@@ -88,7 +92,12 @@ extension LocationsViewController {
         navigationController?.navigationBar.tintColor = .black
         navigationItem.title = "locations.title".localized()
         navigationItem.rightBarButtonItems = [buttonSearch]
-        
+    }
+    
+    func setupNoDataInfo() {
+        noDataLbl.font = .locationNoData
+        noDataLbl.text = "locations.empty".localized()
+        noDataLbl.isHidden = true
     }
     
     func getLocations() {
